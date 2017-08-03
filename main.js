@@ -1,7 +1,7 @@
 //mahdi-fied from https://www.sitepoint.com/url-parameters-jquery/
 //takes a string argument - returns the value of the parameter (by name) from href, if it exists
-function getParam(name){
-	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+function getParam(key){
+	var results = new RegExp('[\?&]' + key + '=([^&#]*)').exec(window.location.href);
 	if(results){
         return results[1];
     }else{
